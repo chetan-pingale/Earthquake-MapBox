@@ -1,0 +1,36 @@
+{
+    "extends": "airbnb",
+
+    "rules": {
+        "indent": [2, 4, { "SwitchCase": 1 }],
+        "arrow-body-style": [2, "as-needed"],
+        "arrow-parens": [2, "as-needed"],
+        "no-multiple-empty-lines": [2, {"max": 1}]
+    },
+
+    "plugins": [
+        "react"
+    ],
+
+    "settings": {
+        "import/resolver": "webpack"
+    },
+
+    "globals": {
+        "ENV": true,
+        "module": true,
+        "jest": true
+    },
+
+    "env": {
+        "browser": true,
+        "node": false
+    },
+
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    }
+}
